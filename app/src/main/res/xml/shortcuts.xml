@@ -1,0 +1,49 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- enabled : 1. rue : 長按 app 出現於 shortcut 列表.
+                   2. false : 長按 app 不會出現於 shortcut 列表.
+         icon : 顯示於列表與拉於桌面的 icon.
+         shortcutDisabledMessage : 點擊在 disable/刪除 後的 Pinned toast 的文字.
+         shortcutId : 此 shortcut 唯一 id.
+         shortcutLongLabel : 顯示於列表的名稱.
+         shortcutShortLabel : 顯示於桌面捷徑的名稱.
+         intent : 要導向的 intent, action 必設, 可新增多個 intent, 點擊打開的為最後一個 intent, back 回上一個.
+         categories : 此 shortcut 類別.
+    -->
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_looks_one_black_24dp"
+        android:shortcutDisabledMessage="@string/disable_msg_1"
+        android:shortcutId="shortcut1"
+        android:shortcutLongLabel="@string/long_label_1"
+        android:shortcutShortLabel="@string/short_label_1"
+        tools:targetApi="n_mr1">
+        <intent
+            android:action="com.van.from.static_shortcut"
+            android:targetClass="com.van.shortcuts.OneActivity"
+            android:targetPackage="com.van.shortcuts" />
+        <categories android:name="com.van.shortcut.static" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_looks_two_black_24dp"
+        android:shortcutDisabledMessage="@string/disable_msg_2"
+        android:shortcutId="shortcut2"
+        android:shortcutLongLabel="@string/long_label_2"
+        android:shortcutShortLabel="@string/short_label_2"
+        tools:targetApi="n_mr1">
+        <intent
+            android:action="com.van.from.static_shortcut"
+            android:targetClass="com.van.shortcuts.MainActivity"
+            android:targetPackage="com.van.shortcuts" />
+        <intent
+            android:action="com.van.from.static_shortcut"
+            android:targetClass="com.van.shortcuts.OneActivity"
+            android:targetPackage="com.van.shortcuts" />
+        <intent
+            android:action="com.van.from.static_shortcut"
+            android:targetClass="com.van.shortcuts.TwoActivity"
+            android:targetPackage="com.van.shortcuts" />
+        <categories android:name="com.van.shortcut.static" />
+    </shortcut>
+</shortcuts>

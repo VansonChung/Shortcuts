@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Shortcuts</string>
+
+    <string name="short_label_1">桌面捷徑1</string>
+    <string name="long_label_1">列表名稱1</string>
+    <string name="disable_msg_1">Disable 訊息1</string>
+
+    <string name="short_label_2">桌面捷徑2</string>
+    <string name="long_label_2">列表名稱2</string>
+    <string name="disable_msg_2">Disable 訊息2</string>
+
+    <string name="short_label_3">桌面捷徑3</string>
+    <string name="long_label_3">列表名稱3</string>
+    <string name="disable_msg_3">Disable 訊息3</string>
+
+    <string name="short_label_4">桌面捷徑4</string>
+    <string name="long_label_4">列表名稱4</string>
+    <string name="disable_msg_4">Disable 訊息4</string>
+
+    <string name="short_label_5">桌面捷徑5</string>
+    <string name="long_label_5">列表名稱5</string>
+    <string name="disable_msg_5">Disable 訊息5</string>
+
+    <string name="short_label_6">桌面捷徑6</string>
+    <string name="long_label_6">列表名稱6</string>
+    <string name="disable_msg_6">Disable 訊息6</string>
 </resources>
