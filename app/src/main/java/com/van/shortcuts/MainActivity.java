@@ -40,21 +40,24 @@ public class MainActivity extends AppCompatActivity {
                 iSet2.setAction("com.van.from.dynamic_shortcut");
                 iSet3.setAction("com.van.from.dynamic_shortcut");
                 Intent[] iSets = {iSet1, iSet2, iSet3};
-                ShortcutInfo sSet = Utility.getShortcutInfo(this, "shortcut3", R.drawable
-                        .ic_looks_3_black_24dp, getString(R.string.short_label_3), getString(R
-                        .string.long_label_3), getString(R.string.disable_msg_3), iSets, null);
+                ShortcutInfo sSet = Utility.getShortcutInfo(this, "dynamic_shortcut1", R.drawable
+                                .ic_looks_one_red_24dp, getString(R.string.dynamic_short_label_1),
+                        getString(R.string.dynamic_long_label_1), getString(R.string
+                                .dynamic_disable_msg_1), iSets, null);
                 Utility.setDynamicShortcuts(this, Collections.singletonList(sSet));
                 break;
             case R.id.bt_add:
                 Intent iAdd = new Intent(this, TwoActivity.class);
                 // 必設 action
                 iAdd.setAction("com.van.from.dynamic_shortcut");
-                ShortcutInfo sAdd1 = Utility.getShortcutInfo(this, "shortcut3", R.drawable
-                        .ic_looks_4_black_24dp, getString(R.string.short_label_4), getString(R
-                        .string.long_label_4), getString(R.string.disable_msg_4), iAdd, null);
-                ShortcutInfo sAdd2 = Utility.getShortcutInfo(this, "shortcut4", R.drawable
-                        .ic_looks_4_black_24dp, getString(R.string.short_label_4), getString(R
-                        .string.long_label_4), getString(R.string.disable_msg_4), iAdd, null);
+                ShortcutInfo sAdd1 = Utility.getShortcutInfo(this, "dynamic_shortcut1", R
+                                .drawable.ic_looks_two_red_24dp, getString(R.string
+                                .dynamic_short_label_2), getString(R.string.dynamic_long_label_2),
+                        getString(R.string.dynamic_disable_msg_2), iAdd, null);
+                ShortcutInfo sAdd2 = Utility.getShortcutInfo(this, "dynamic_shortcut2", R
+                                .drawable.ic_looks_two_red_24dp, getString(R.string
+                                .dynamic_short_label_2), getString(R.string.dynamic_long_label_2),
+                        getString(R.string.dynamic_disable_msg_2), iAdd, null);
                 List<ShortcutInfo> adds = new ArrayList<>();
                 adds.add(sAdd1);
                 adds.add(sAdd2);
@@ -64,12 +67,15 @@ public class MainActivity extends AppCompatActivity {
                 Intent iUpdate = new Intent(this, TwoActivity.class);
                 // 必設 action
                 iUpdate.setAction("com.van.from.dynamic_shortcut");
-                ShortcutInfo sUpdate1 = Utility.getShortcutInfo(this, "shortcut3", R.drawable
-                        .ic_looks_3_black_24dp, getString(R.string.short_label_3), getString(R
-                        .string.long_label_3), getString(R.string.disable_msg_3), iUpdate, null);
-                ShortcutInfo sUpdate2 = Utility.getShortcutInfo(this, "shortcut4", R.drawable
-                        .ic_looks_5_black_24dp, getString(R.string.short_label_5), getString(R
-                        .string.long_label_5), getString(R.string.disable_msg_5), iUpdate, null);
+                ShortcutInfo sUpdate1 = Utility.getShortcutInfo(this, "dynamic_shortcut1", R
+                                .drawable.ic_looks_one_red_24dp, getString(R.string
+                                .dynamic_short_label_1), getString(R.string.dynamic_long_label_1),
+                        getString(R.string.dynamic_disable_msg_1), iUpdate, null);
+                ShortcutInfo sUpdate2 = Utility.getShortcutInfo(this, "dynamic_shortcut4", R
+                                .drawable.ic_looks_3_red_24dp, getString(R.string
+                                .dynamic_short_label_3),
+                        getString(R.string.dynamic_long_label_3), getString(R.string
+                                .dynamic_disable_msg_3), iUpdate, null);
                 List<ShortcutInfo> updates = new ArrayList<>();
                 updates.add(sUpdate1);
                 updates.add(sUpdate2);
@@ -77,8 +83,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.bt_del:
                 List<String> delIds = new ArrayList<>();
-                delIds.add("shortcut3");
-                delIds.add("shortcut5");
+                delIds.add("dynamic_shortcut1");
+                delIds.add("dynamic_shortcut4");
                 Utility.delDynamicShortcuts(this, delIds);
                 break;
             case R.id.bt_del_all:
@@ -86,15 +92,16 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.bt_disable:
                 List<String> DisableIds = new ArrayList<>();
-                DisableIds.add("shortcut3");
-                DisableIds.add("shortcut8");
+                DisableIds.add("dynamic_shortcut2");
+                DisableIds.add("dynamic_shortcut8");
                 Utility.disableShortcuts(this, DisableIds);
                 break;
             case R.id.bt_pinned:
                 Intent ipinned = new Intent(this, TwoActivity.class);
                 ipinned.setAction("com.van.from.api_pinned");
-                Utility.addPinnedShortcuts(this, "shortcut6", R.drawable.ic_looks_6_black_24dp,
-                        getString(R.string.short_label_6), getString(R.string.disable_msg_6), ipinned);
+                Utility.addPinnedShortcuts(this, "pinned_shortcut1", R.drawable
+                                .ic_looks_one_blue_24dp, getString(R.string.pinned_short_label_1),
+                        getString(R.string.pinned_disable_msg_1), ipinned);
                 break;
         }
     }

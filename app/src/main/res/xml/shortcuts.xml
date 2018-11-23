@@ -13,10 +13,10 @@
     <shortcut
         android:enabled="true"
         android:icon="@drawable/ic_looks_one_black_24dp"
-        android:shortcutDisabledMessage="@string/disable_msg_1"
-        android:shortcutId="shortcut1"
-        android:shortcutLongLabel="@string/long_label_1"
-        android:shortcutShortLabel="@string/short_label_1"
+        android:shortcutDisabledMessage="@string/static_disable_msg_1"
+        android:shortcutId="static_shortcut1"
+        android:shortcutLongLabel="@string/static_long_label_1"
+        android:shortcutShortLabel="@string/static_short_label_1"
         tools:targetApi="n_mr1">
         <intent
             android:action="com.van.from.static_shortcut"
@@ -27,10 +27,10 @@
     <shortcut
         android:enabled="true"
         android:icon="@drawable/ic_looks_two_black_24dp"
-        android:shortcutDisabledMessage="@string/disable_msg_2"
-        android:shortcutId="shortcut2"
-        android:shortcutLongLabel="@string/long_label_2"
-        android:shortcutShortLabel="@string/short_label_2"
+        android:shortcutDisabledMessage="@string/static_disable_msg_2"
+        android:shortcutId="static_shortcut2"
+        android:shortcutLongLabel="@string/static_long_label_2"
+        android:shortcutShortLabel="@string/static_short_label_2"
         tools:targetApi="n_mr1">
         <intent
             android:action="com.van.from.static_shortcut"
