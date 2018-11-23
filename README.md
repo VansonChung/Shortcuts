@@ -1,5 +1,7 @@
 # Shortcuts
 #### https://developer.android.com/guide/topics/ui/shortcuts/
+
+![image](https://github.com/VansonChung/Shortcuts/blob/master/shortcuts-1.jpg)    ![image](https://github.com/VansonChung/Shortcuts/blob/master/shortcuts-2.jpg)
          
          Shortcuts 可分為 Static/Dynamic/Pinned, 點擊後可導到該客製化的 Intent.
          
