@@ -11,7 +11,7 @@
                   8.0 以上由 Static/Dynamic 拉出與 API 建立的 Pinned 則一樣, 相互影響.
                   (API 建立的相當於由 Dynamic 拉出)
                   
-         7.1.1 API 25 : 此版本以下只有直接建立桌面捷徑功能 (8.0 開始稱為 Pinned shortcuts).
+         7.1.1 API 25 : 此版本之前只有直接建立桌面捷徑功能 (8.0 開始稱為 Pinned shortcuts),
                         需透過 broadcast 新增, 但透過 broadcast 刪除皆無效...
                         此版本開始有 Static/Dynamic shortcuts.
          8.0   API 26 : 開始有 Pinned shortcuts, broadcast 建立 Pinned 在此版本無效, 新 api 取代並可兼容所有版本                    
