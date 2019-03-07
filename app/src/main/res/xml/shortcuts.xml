@@ -1,6 +1,6 @@
 <shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <!-- enabled : 1. rue : 長按 app 出現於 shortcut 列表.
+    <!-- enabled : 1. true : 長按 app 出現於 shortcut 列表.
                    2. false : 長按 app 不會出現於 shortcut 列表.
          icon : 顯示於列表與拉於桌面的 icon.
          shortcutDisabledMessage : 點擊在 disable/刪除 後的 Pinned toast 的文字.
@@ -8,7 +8,10 @@
          shortcutLongLabel : 顯示於列表的名稱.
          shortcutShortLabel : 顯示於桌面捷徑的名稱.
          intent : 要導向的 intent, action 必設, 可新增多個 intent, 點擊打開的為最後一個 intent, back 回上一個.
+                  targetPackage 需為 build.gradle 的 applicationId.
          categories : 此 shortcut 類別.
+         Note : 如需區分不同 applicationId (ex : debug/release), 可於 debug 目錄下再創建一個 shortcuts.xml
+         (src/debug/res/xml/....)
     -->
     <shortcut
         android:enabled="true"
